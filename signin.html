@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goblin+One&family=Gruppo&family=Inclusive+Sans&family=Pixelify+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="header_navbar">
+            <ul class="header_navbar-list">
+                <li class="header_navbar-item"><img src="./image/fc4681b4a454a312f9b98a2d66bd5582.jpeg" alt="logo" height="30px" width=" 30px " ;></li>
+                <li class="header_navbar-item "> <a href="drinks.html">Drinks</a>
+                </li>
+                <li class="header_navbar-item "><a href="cosplay.html">Cosplay</a></li>
+                <li class="header_navbar-item "><a href="accessories.html">Accessories/Bags</a>
+                </li>
+                <li class="header_navbar-item "><input type="text " placeholder="Search "><i class="fa fa-search "></i></li>
+            </ul>
+            <ul class="header_navbar-list ">
+                <li class="header_navbar-item "><a href="">Sign in<i class="fa fa-sign-in "></i></a></li>
+                <li class="header_navbar-item "><a href=" ./signup.html ">Sign up<i class="fa fa-sign-out "></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="box">
+        <h1>Sign In</h1>
+        <p>Welcome back! 🖤♡♥️</p>
+        <h2>.𖥔 ݁ ˖🕸️🕷.𖥔 ݁ ˖.𖥔 ݁ ˖🕸️🕷.𖥔 ݁ ˖.𖥔 ݁ ˖🕸️🕷.𖥔 ˖.𖥔 🎃݁ ˖🕸️🕷.𖥔˖.𖥔 ݁ ˖🕸️🕷.𖥔 ݁ ˖.𖥔 ݁ ˖🕸️🕷.𖥔 ݁ ˖.𖥔 ˖🕸️🕷.𖥔 ݁ ˖.𖥔 ݁ ˖🕸️🕷.𖥔 ݁ ˖.𖥔 ݁ ˖🎃🕸️🕷.𖥔 ˖.𖥔 ݁ ˖🕸️🕷.𖥔 ˖.𖥔 ݁ ˖🕸️🕷.𖥔 ݁ ˖.𖥔 ݁ ˖🕸️🕷.𖥔 ݁ ˖.</h2>
+        <form id="loginForm" onsubmit="return validateLoginForm();">
+            <div class="text-box">
+                <h4>Email</h4>
+                <input type="text" placeholder="Your email" name="loginEmail" id="loginEmail">
+            </div>
+            <div class="text-box">
+                <h4>Password</h4>
+                <input type="password" placeholder="Your password" name="loginPassword" id="loginPassword">
+            </div>
+            <div class="text-box">
+                <button type="submit">Submit</button>
+                <p class="alert">(*) No account ?</p>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="footer-container">
+        <div class="footer-items">
+            <h3>About Store</h3>
+            <p>Address: uuu2 ksksksk 00000 </p>
+            <p>Hotline: 393</p>
+
+        </div>
+        <div class="footer-items">
+            <h3>Get Help</h3>
+            <a href="#">Order Status</a>
+            <br>
+            <a href="#">Delivery</a>
+            <br>
+            <a href="#">Returns</a>
+            <br>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-items">
+            <h3>Customer Care</h3>
+            <a href="#">Feedback</a>
+
+        </div>
+        <div class="footer-items">
+            <h3>Our Social</h3>
+            <a href="#">Facebook</a>
+            <br>
+            <a href="#">Twitter</a>
+            <br>
+            <a href="# ">Instagram</a>
+
+        </div>
+        <div class="footer-items ">
+            <h3>Payment Options</h3>
+            <p>Visa</p>
+            <p>Debit</p>
+            <p>JCB</p>
+            <p>American Express</p>
+        </div>
+    </div>
+
+    <script>
+        function validateLoginForm() {
+            const loginEmail = document.getElementById('loginEmail').value;
+            const loginPassword = document.getElementById('loginPassword').value;
+
+            if (loginEmail.trim() === '' || loginPassword.trim() === '') {
+                alert('Please fill in all information .');
+                return false;
+            }
+
+            alert('Sign in successfully.');
+            return true;
+        }
+
+        // function validateRegisterForm() {
+        //     const fullName = document.getElementById('fullName').value;
+        //     const email = document.getElementById('email').value;
+        //     const pwd = document.getElementById('pwd').value;
+        //     const rePwd = document.getElementById('rePwd').value;
+
+        //     if (fullName.trim() === '' || email.trim() === '' || pwd.trim() === '' || rePwd.trim() === '') {
+        //         alert('Please fill in all information .');
+        //         return false;
+        //     }
+
+        //     if (pwd !== rePwd) {
+        //         alert('Password and re-enter password do not match.');
+        //         return false;
+        //     }
+
+        //     alert('Sign in successfully.');
+        //     return true;
+        // }
+    </script>
+
+
+
+
+</body>
+
+</html>
